@@ -7,7 +7,7 @@ pipeline {
         stage('Echo') {
             steps {
                 git 'https://github.com/Redd-devel/jenk2_test.git'
-                sh 'printenv'
+                sh 'cat /usr/lib/os-release'
             }
         }
     }
